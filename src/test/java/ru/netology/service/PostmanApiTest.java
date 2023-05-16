@@ -1,4 +1,5 @@
 package ru.netology.service;
+
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -20,7 +21,7 @@ public class PostmanApiTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("some data"))
+                .body("data", equalTo("some value"))
         ;
     }
 
